@@ -12,8 +12,8 @@ const App = () => {
   return (
     <div >
           <h1>Bitcoin Index</h1>
-          <CurrencySelector currency={currency} handleCurrencyChange={handleCurrencyChange}/>
-          <DataDisplay />
+          <CurrencySelector handleCurrencyChange={handleCurrencyChange}/>
+          <DataDisplay currency={currency}/>
     </div>
   )
 }
