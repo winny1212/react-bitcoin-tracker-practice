@@ -56,13 +56,8 @@ export default function DataDisplay(props) {
     return (
         <div>
             <h3>Bitcoin data in {currency}</h3>
-
-            {/* {Object.entries(BitcoinData).map(([data,value])=>{
-               return <div>Date:{data}  Value:{value}</ div>
-            })} */}
-
-             <div style={{margin:'1rem', maxWidth:"1000px"}}>
-                 <Line height={150} data={formatChartData()} />
+             <div style={{margin:'0 auto', maxWidth:"1000px", textAlign: 'center'}}>
+                 <Line height={100} data={formatChartData()} />
              </div> 
         </div>
     )
